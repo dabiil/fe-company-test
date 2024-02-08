@@ -3,20 +3,22 @@ import { noop } from 'lodash-es';
 
 import { IBoard } from 'types';
 
+import { defaultData } from 'src/consts';
+
 export interface IData {
   board: IBoard;
   onChange(board: IBoard): void;
   onAddColumn(value: string): void;
   onAddItem(columnIndex: number, value: string): void;
+  onRemoveColumn(columnIndex: number): void;
+  onSortColumn(columnIndex: number): void;
 }
 
 export const dataContext = createContext<IData>({
-  board: {
-    columns: [],
-    createdAt: -1,
-    id: '0',
-  },
+  board: defaultData,
   onChange: noop,
   onAddColumn: noop,
   onAddItem: noop,
+  onRemoveColumn: noop,
+  onSortColumn: noop,
 });
