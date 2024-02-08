@@ -33,7 +33,7 @@ export const Column: React.FC<IColumnProps> = ({ title, id, index, cards }) => {
     <Draggable draggableId={id} index={index}>
       {(provided) => (
         <div className='px-4 h-full' ref={provided.innerRef} {...provided.draggableProps}>
-          <div className='p-3 w-80 rounded-xl bg-zinc-200 text-gray-800 max-h-full flex flex-col'>
+          <div className='p-3 w-72 rounded-xl bg-zinc-200 text-gray-800 max-h-full flex flex-col'>
             <div className='relative flex justify-between items-start flex-wrap w-full'>
               <div className='grow shrink basis-min transition-all hover:bg-zinc-300' {...provided.dragHandleProps}>
                 <h2 className='font-extrabold overflow-hidden py-2 pl-3 pr-2 break-words wrap-anywhere'>{title}</h2>
