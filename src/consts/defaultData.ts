@@ -15,17 +15,17 @@ export const defaultData: IBoard = {
       cards: [
         {
           id: nanoid(),
-          createdAt: now - 65,
+          createdAt: now,
           content: '1 Card',
         },
         {
           id: nanoid(),
-          createdAt: now - 20,
+          createdAt: now - 2000,
           content: '2 Card',
         },
         {
           id: nanoid(),
-          createdAt: now,
+          createdAt: now - 6000,
           content: '3 Card',
         },
       ],
