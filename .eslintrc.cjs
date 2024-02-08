@@ -1,11 +1,11 @@
-const path  = require('path')
+const path = require('path');
 
 module.exports = {
-  root:true,
+  root: true,
   env: {
     browser: true,
     node: true,
-    es2020: true
+    es2020: true,
   },
   extends: [
     'eslint:recommended',
@@ -21,13 +21,12 @@ module.exports = {
   plugins: [
     'eslint-comments',
     'prettier',
-    'promise', 
+    'promise',
     'react',
-    "react-hooks",
+    'react-hooks',
     'simple-import-sort',
     '@typescript-eslint',
-    'react-refresh'
-
+    'react-refresh',
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -42,12 +41,9 @@ module.exports = {
     SharedArrayBuffer: 'readonly',
   },
   parser: '@typescript-eslint/parser',
-  ignorePatterns: ['dist', 'node_modules', '.next','.eslint.cjs'],
+  ignorePatterns: ['dist', 'node_modules', '.next', '.eslint.cjs'],
   rules: {
-    'react-refresh/only-export-components': [
-      'warn',
-      { allowConstantExport: true },
-    ],
+    'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
     'react/react-in-jsx-scope': 'off',
     'prettier/prettier': [
       'error',
@@ -107,7 +103,7 @@ module.exports = {
     'no-console': [
       'error',
       {
-        allow: ['warn', 'error', 'info','log'],
+        allow: ['warn', 'error', 'info', 'log'],
       },
     ],
     'no-plusplus': 'off',
@@ -130,7 +126,7 @@ module.exports = {
           // External packages.
           ['^react', '^@?\\w'],
           // Internal packages.
-          ['^containers', '^components', '^hooks'],
+          ['^containers', '^components', '^hooks', '^helpers', '^types'],
           // Internal folders.
           ['^src/'],
           // Parent imports.
@@ -165,7 +161,7 @@ module.exports = {
     'react/destructuring-assignment': 'error',
     'react/no-this-in-sfc': 'error',
     'react/no-danger': 'off',
-    'no-return-assign':'off',
+    'no-return-assign': 'off',
     'react/no-children-prop': 'error',
     'react/jsx-boolean-value': 'error',
     'react/jsx-curly-brace-presence': ['error', { props: 'never', children: 'never' }],
@@ -187,6 +183,8 @@ module.exports = {
         code: 120,
         ignoreUrls: true,
         ignoreRegExpLiterals: true,
+        ignoreTemplateLiterals: true,
+        ignoreStrings: true,
       },
     ],
     'jsx-a11y/click-events-have-key-events': 'off',

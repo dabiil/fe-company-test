@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.wrap-anywhere {
+  overflow-wrap: anywhere;
+}
+
+.basis-min {
+  flex-basis: min-content;
+}
+
+.huge-shadow {
+  box-shadow:
+    0px 1px 1px #091e4240,
+    0px 0px 1px #091e424f;
+}
