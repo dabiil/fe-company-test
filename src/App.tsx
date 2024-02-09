@@ -1,9 +1,9 @@
-import { Canvas } from 'containers';
+import { Board } from 'components';
 
 import { DataProvider } from 'src/providers';
 
 export const App: React.FC = () => (
   <DataProvider>
-    <Canvas />
+    <Board />
   </DataProvider>
 );

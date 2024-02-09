@@ -4,7 +4,7 @@ import cx from 'classnames';
 import { useBoolean, useOutsideClick } from 'hooks';
 import { IColumn } from 'types';
 
-import { Ellipsis } from 'src/icons';
+import { Ellipsis } from 'src/components/icons';
 import { useDataContext } from 'src/providers';
 
 import { Card } from '../Card';

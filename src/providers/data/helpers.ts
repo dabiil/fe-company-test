@@ -1,6 +1,6 @@
 import { IBoard } from 'types';
 
-import { defaultData } from 'src/consts';
+import { defaultData } from './defaultData';
 
 const dataKey = 'dataCashKey';
 

@@ -2,10 +2,10 @@ import { PropsWithChildren, useCallback, useMemo, useState } from 'react';
 import { cloneDeep, sortBy } from 'lodash-es';
 import { nanoid } from 'nanoid';
 
-import { getDataHelper, setDataHelper } from 'helpers';
 import { IBoard } from 'types';
 
 import { dataContext, IData } from './context';
+import { getDataHelper, setDataHelper } from './helpers';
 
 export const DataProvider: React.FC<PropsWithChildren> = ({ children }) => {
   const [data, setData] = useState<IBoard>(getDataHelper());

@@ -3,7 +3,7 @@ import { trim } from 'lodash-es';
 
 import { useBoolean, useOutsideClick } from 'hooks';
 
-import { AddIcon } from 'src/icons';
+import { AddIcon } from 'src/components/icons';
 import { useDataContext } from 'src/providers';
 
 interface INewCardProps {

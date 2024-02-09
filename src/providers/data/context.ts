@@ -3,7 +3,7 @@ import { noop } from 'lodash-es';
 
 import { IBoard } from 'types';
 
-import { defaultData } from 'src/consts';
+import { defaultData } from './defaultData';
 
 export interface IData {
   board: IBoard;
